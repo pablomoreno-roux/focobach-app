@@ -1,3 +1,4 @@
+```tsx
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import { IdentityProvider } from '../lib/identity-context'
 import { CallbackHandler } from '../components/CallbackHandler'
@@ -16,6 +17,13 @@ export const Route = createRootRoute({
       },
       {
         title: 'FocoBach — Cuaderno del Bachillerato Internacional',
+      },
+    ],
+    links: [
+      {
+        rel: 'icon',
+        href: '/favicon.ico',
+        type: 'image/x-icon',
       },
     ],
   }),
@@ -37,3 +45,5 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     </html>
   )
 }
+```
+
